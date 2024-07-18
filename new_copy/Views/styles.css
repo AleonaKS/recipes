@@ -1,0 +1,173 @@
+/* Общие стили */
+body {
+    background-color: #f2f2f2; /* Светло-серый фон */
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+ 
+
+/* Стили для кнопок */
+.button {
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+          margin: 5px;
+    background-color: #ffffff; /* Белый цвет фона */
+    box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.3); /* Серая тень вокруг кнопок */
+    width: calc(33.33% - 10px); /* Ширина кнопки по трети ширины строки с отступами по 5px между кнопками */
+    max-width: 200px; /* Максимальная ширина кнопки */
+    box-sizing: border-box; /* Учитываем padding и border в общей ширине */
+}
+
+/* Стили для изображений внутри кнопок */
+.button img {
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+/* Очистка плавающих элементов */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Стили для контейнера */
+.recipe-container {
+    display: flex; /* Отображаем элементы в ряд */
+    overflow-x: auto; /* Включаем горизонтальную прокрутку */
+    white-space: nowrap; /* Запрещаем перенос строк */
+    overflow: hidden; /* Скрыть часть контента, который выходит за границы контейнера */
+}
+/* Стили для контейнера рецептов */
+.recipe-row {
+    overflow-x: auto; /* Включение горизонтальной прокрутки */
+    white-space: nowrap; /* Предотвращение переноса строк */
+    margin-top: 20px;
+}
+/* Стили для отдельного рецепта */
+.recipe {
+    display: inline-block;
+    width: 200px; /* Ширина рецепта */
+    text-align: center;
+    margin-right: 20px;
+    height: auto; /* Автоматическая высота рецепта */
+    margin-bottom: 20px; /* Отступ снизу для разделения рецептов */
+}
+
+.recipe img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.recipe p {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+h1 {
+    text-align: left; /* Выравнивание текста по левому краю */
+    font-size: 10px !important; /* Размер шрифта */
+    margin-left: 20px; /* Отступ слева */
+    margin-top: 20px; /* Отступ сверху */ 
+}
+
+
+
+
+.top-nav {
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.nav-icons {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar {
+    margin: 10px;
+    margin-left: 10px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 500px; /* 设置搜索栏宽度 */
+}
+
+.icon-group {
+    display: flex;
+    align-items: center;
+}
+
+.icon-group i {
+    margin-left: 10px; /* 添加图标之间的间距 */
+}
+
+.navigation-bar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+    color: white;
+}
+
+.nav-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+}
+
+
+
+
+
+
+
+.outer-container {
+    padding-left: 20px; 
+}
+
+.big-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px; /* Добавляем отступ между средними контейнерами */
+}
+
+.middle-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: calc(25% * 4); /* Ширина контейнера с учетом ширины элемента и их количества */
+}
+
+.category-item {
+    width: 100%; /* Ширина элемента */
+    margin-bottom: 10px; /* Добавляем отступ между элементами */
+    position: relative; /* Устанавливаем позицию относительно родителя */
+    text-align: center; /* Выравниваем содержимое по центру */
+}
+
+/* Стили для изображений внутри категории */
+.category-item img { 
+    max-width: 80%; /* Максимальная ширина изображения равна ширине контейнера */
+    height: auto; /* Автоматическая высота, сохраняющая пропорции */
+    display: block; /* Убираем внешние отступы */
+    margin: 0 auto; /* Выравниваем изображение по центру */
+    border-radius: 10px; 
+}
+
+/* Определяем стили для названий категорий */
+.category-item .category-name {
+    padding: 5px; /* Добавляем отступы вокруг текста */
+    font-size: 14px; /* Размер шрифта */
+}
